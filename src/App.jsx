@@ -1,7 +1,9 @@
 // import "./App.css";
 import { useState } from "react";
+// import Clock from "./components/clock/Clock";
+import Avatar from "./components/previewAvatar/Avatar";
 // import Content from "./components/Call_API/Content";
-import Resize from "./components/resize/Resize";
+// import Resize from "./components/resize/Resize";
 
 //Ví Dụ 1
 
@@ -31,7 +33,9 @@ function App() {
     <div style={{ padding: 32 }}>
       <button onClick={() => setShow(!show)}>Toggle</button>
       {/* {show && <Content />} */}
-      {show && <Resize />}
+      {/* {show && <Resize />} */}
+      {/* {show && <Clock />} */}
+      {show && <Avatar />}
     </div>
   );
 }
