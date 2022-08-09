@@ -1,0 +1,6 @@
+import {useRef} from "react;
+
+- Lưu các giá trị qua một tham chiếu bên ngoài
+- function components
+- Luôn trả về object có property là current
+- Muốn lấy giá trị của ref thì phải chọc qua current

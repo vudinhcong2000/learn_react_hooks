@@ -1,0 +1,15 @@
+import {useState} from "react";
+
+------------ useState() ------------------
+- Là một hook cơ bản.
+- Có thể dùng state trong function components.
+- Input: initalState - giá trị khởi tạo (có thể là giá trị hoặc function). Vì nó là giá trị khởi tạo nên chỉ dùng cho lần đầu.
+- Output: 1 mảng có 2 phần tử tương ứng cho state và setState (setState là một hàm dùng để sét lại state).
+
+
+------------ chú ý ------------------
+- Component được re-render sau khi setState.
+- InitialState chỉ dùng cho lần đầu.
+- setState với callback.
+- initialState với callback.
+- setState là thay thế state bằng giá trị mới.

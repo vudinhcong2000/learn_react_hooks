@@ -1,0 +1,8 @@
+import { useMemo } from "react";
+
+
+--------------------------------
+- là một hook.
+- useMemo() có 2 đối số truyền vào là function và despendency và hoạt động như useEffect và useCallback
+- useMemo(): tránh thực hiện lại một logic nào đó không cần thiết.
+

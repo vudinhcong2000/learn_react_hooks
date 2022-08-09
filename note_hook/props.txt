@@ -1,0 +1,4 @@
+- Props là viết tắt của  properties.
+- Props là các đối số được truyền vào các thành phần react.
+- Props được chuyển đến các thành phần thông qua các thuộc tính HTML.
+- Truyền tử cha sang con.

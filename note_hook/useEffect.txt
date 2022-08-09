@@ -1,0 +1,26 @@
+import {useEffect} from "react"
+
+------------------ Cấu trúc ------------------
+useEffect(callback, [despendency])
+
+Trong đó: 
+    + callback là bắt buộc phải có.
+    + despendency: phụ thuộc về mặt dữ liệu -> không bắt buộc
+
+------------------ useEffect() ------------------
+- có 3 trường hợp
+    1. useEffect(callback)
+        - Gọi callback mỗi khi component re-render.
+        - Gọi callback sau khi component thêm element vào DOM.
+        - Luôn  chạy.
+    2. useEffect(callback, [])
+        - Chỉ gọi callback sau khi component mounted.
+        - Chỉ chạy 1 lần.
+    3. useEffect(callback, [despendency])
+        - Phụ thuộc vào despendency.
+        - Callback sẽ được gọi lại mỗi khi despendency thay đổi.
+
+------------------ Chú ý ------------------
+- Callback luôn được gọi sau khi component mounted.
+- Cleanup function luôn được gọi trước khi component unmounted. 
+- Cleanup function luôn được gọi trước khi callback được gọi (trừ lần mounted).

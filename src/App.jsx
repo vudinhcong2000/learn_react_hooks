@@ -1,7 +1,11 @@
 // import "./App.css";
 import { useState } from "react";
+// import Memo from "./components/memo/Memo";
 // import Clock from "./components/clock/Clock";
-import Avatar from "./components/previewAvatar/Avatar";
+// import Avatar from "./components/useState_useEffect/previewAvatar/Avatar";
+// import UseCallback from "./components/useCallback/UseCallback";
+import UseMemo from "./components/useMemo/Usememo";
+// import UseRef from "./components/useRef/UseRef";
 // import Content from "./components/Call_API/Content";
 // import Resize from "./components/resize/Resize";
 
@@ -35,7 +39,11 @@ function App() {
       {/* {show && <Content />} */}
       {/* {show && <Resize />} */}
       {/* {show && <Clock />} */}
-      {show && <Avatar />}
+      {/* {show && <Avatar />} */}
+      {/* {show && <UseRef />} */}
+      {/* {show && <Memo />} */}
+      {/* {show && <UseCallback />} */}
+      {show && <UseMemo />}
     </div>
   );
 }

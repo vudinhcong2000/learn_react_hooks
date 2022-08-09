@@ -1,0 +1,15 @@
+import {useCallback} from "react"
+
+---------------------------
+- Cách viết: useCallback()
+- Nhận vào 2 đối số: useCallback([callback], [despendency])
+    + Đối số đầu tiên là callback (là hàm thực hiện logic).
+    + Đối số thứ 2 là mảng có thể chứa những despendency -> đối với mảng despendency nó hoạt động giống như useEffect().
+
+---------------------------
+
+- Giúp tránh tạo ra những hàm mới không cần thiết.
+
+----------chú ý-------------
+- Nếu đã sử dụng react memo để tránh các component con bị re-render không cần thiết thì những cái function phải sử dụng useCallback để tránh việc re-render không cần thiết.
+- Nếu không sử dụng react memo cho component con thì không cần phải sử dụng useCallback vì không có react memo thì kiểu gì mỗi lần thằng component cha re-render thì thằng con cũng re-render.

@@ -1,0 +1,9 @@
+import {memo} from "react"
+
+- memo() được gọi là -> Higher Order Component (HOC) -> (là Component bậc cao)
+- memo: giúp ghi nhớ lại những props của một component để quyết định xem có render lại component đó hay không nhằm giúp tối ưu về hiệu năng -> nó giúp chúng ta xử lý một component để tránh bị re-render trong những tình huống không cần thiết.
+
+
+* nguyên lý hoạt động: nhận vào một component sau đó sẽ check các props của component đó sau mỗi lần render có bị thay đổi hay không. Nếu có ít nhấy một props thay đổi thì nó sẽ quyết định cho cái component đó re-render, ngược lại nếu không có props nào thay đổi thì nó sẽ không re-render lại component đó.
+
+- đối với memo() để nhận biết được props có thay đổi hay không thì nó sử dụng toán tử so sánh tuyệt đối "==="
